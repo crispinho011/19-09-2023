@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopots - Confirmação de Entrada</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Confirmação de Entrada</h2>
+        <p class="nome-jogador">Seu nome de jogador é:</p>
+        <span class="nome-jogador" id="nomeJogador"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Recuperar o nome do jogador da sessão e exibi-lo na tela de confirmação.
+        const nomeJogador = sessionStorage.getItem("nomeJogador");
+        document.getElementById("nomeJogador").textContent = nomeJogador;
+    </script>
+</body>
+</html>
